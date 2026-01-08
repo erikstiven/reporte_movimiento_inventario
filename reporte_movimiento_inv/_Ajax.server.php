@@ -364,7 +364,7 @@ function genera_cabecera_formulario($sAccion = 'nuevo', $aForm = '')
 
             $ifu->AgregarCampoFecha('fecha_fin', 'Fecha Final|left', true, date('Y') . '/' . date('m') . '/' . date('d'), 70,20,true);
 
-            $select .= '<select multiple name="tran"></select>';
+            $select .= '<select multiple name="tran" id="tran" class="form-control input-sm"></select>';
 
             break;
 
@@ -384,7 +384,7 @@ function genera_cabecera_formulario($sAccion = 'nuevo', $aForm = '')
 
             $ifu->cCampos["empresa"]->xValor = $empresa;
 
-            $select .= '<select multiple name="tran"></select>';
+            $select .= '<select multiple name="tran" id="tran" class="form-control input-sm"></select>';
 
             break;
 
@@ -402,7 +402,7 @@ function genera_cabecera_formulario($sAccion = 'nuevo', $aForm = '')
 																s.subo_cod_empr = $empresa and
 																s.subo_cod_sucu = $sucursal", true, 170, 150,true);
 
-            $select .= '<select multiple name="tran" size="5">';
+            $select .= '<select multiple name="tran" id="tran" size="5" class="form-control input-sm">';
             $query = "select tran_cod_tran, tran_des_tran from saetran where tran_cod_empr = $empresa and tran_cod_sucu = $sucursal and tran_cod_modu = 10 order by tran_des_tran";
             if ($oIfx->Query($query)) {
                 if ($oIfx->NumFilas() > 0) {
@@ -458,7 +458,7 @@ function genera_cabecera_formulario($sAccion = 'nuevo', $aForm = '')
 				<tr>
 						<td>' . $ifu->ObjetoHtmlLBL('bodega') . '</td>
 						<td>' . $ifu->ObjetoHtml('bodega') . '</td>
-						<td>Transaccion:</td>
+						<td><label class="control-label" for="tran">* Transaccion:</label></td>
 						<td colspan="3">' . $select . '</td>
 				<tr>
 
