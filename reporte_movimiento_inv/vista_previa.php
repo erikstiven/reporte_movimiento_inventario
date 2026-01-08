@@ -49,12 +49,6 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 			color: #000000;
 		}
 
-		.reimpresion {
-			font-family: Verdana, Arial, Helvetica, sans-serif;
-			font-size: 14px;
-			font-weight: bold;
-			text-align: right;
-		}
 		-->
 	</style>
 
@@ -149,8 +143,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 			<table width="98%" height="95%" border="0" align="center">
 				<tr>
-					<td colspan="3" align="left"><? echo $empr_logo; ?></td>
-					<td align="right" class="reimpresion">REIMPRESION</td>
+					<td colspan="4" align="left"><? echo $empr_logo; ?></td>
 				</tr>
 				<tr>
 					<td align="center" height="5">&nbsp;</td>
