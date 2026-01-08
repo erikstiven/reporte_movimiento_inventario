@@ -1547,7 +1547,7 @@ function genera_pdf_movimiento_inv_formato_salida($payload = array())
             return $oReturn;
         }
 
-        $pdf = '<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; text-align: right;">REIMPRESION</div>' . $pdf;
+        $pdf = '<div style="font-size: 12px; font-weight: bold; text-align: right;">REIMPRESION</div>' . $pdf;
 
         unset($_SESSION['pdf']);
         $_SESSION['pdf'] = $pdf;
