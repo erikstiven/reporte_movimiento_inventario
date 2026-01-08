@@ -48,6 +48,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 			font-weight: bold;
 			color: #000000;
 		}
+
 		-->
 	</style>
 

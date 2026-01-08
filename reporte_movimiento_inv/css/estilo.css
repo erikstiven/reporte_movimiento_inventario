@@ -43,3 +43,9 @@
 .footable > tbody > tr:hover {
   background: #fbf8e9;
 }
+
+.tran-select {
+  min-height: 110px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
